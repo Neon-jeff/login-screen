@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+.main-container{
+    display: flex;
+    height: 100vh;
+    color: black;
+}
+
+.color-bg{
+    height: 100%;
+    background-color: black;
+    width: 40%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+input{
+    border: none;
+    padding: 15px;
+    background-color: rgb(240, 239, 239);
+    border-radius: 8px;
+    font-size: 0.8rem;
+    width: 100%;
+}
+label{
+    font-size: 1.1rem;
+}
+
+button{
+    border: none;
+    padding: 20px;
+    border: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+
+}
+span{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.toggle{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    cursor: pointer;
+
+}
+
+img{
+
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media  screen and (max-width:768px) {
+ .main-container{
+    flex-direction: column;
+ }
+ .color-bg{
+    width: 100%;
+    height: 15rem;
+ }
+ .form-container{
+    width: 100%;
+    padding: 40px 20px;
+ }
+ form{
+    width: 100%;
+    gap: 25px;
+ }
+ fieldset{
+    gap: 10px;
+ }
+svg{
+    width: 40%;
+    height: 10%;
+}
+h1{
+    padding-top: 10px ;
+}
+p{
+    font-size: .8rem;
+}
+}
